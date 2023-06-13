@@ -10,17 +10,27 @@ const routes = [
   {
     path: '/about',
     name: 'about',
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    component: () => import('../views/AboutView.vue')
   },
   {
     path: '/counter',
     name: 'counter',
-    component: () => import(/* webpackChunkName: "about" */ '../views/CounterView.vue')
+    component: () => import('../views/CounterView.vue')
   },
   {
     path: '/users',
     name: 'users',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Users.vue')
+    component: () => import('../views/Users.vue')
+  },
+  {
+    path: '/pokemon-search',
+    name: 'pokemon-search',
+    component: () => import('../views/SearchPokemonView.vue')
+  },
+  {
+    path: '/pokemon-id/:id',
+    name: 'pokemon-id',
+    component: () => import('../views/PokemonView.vue')
   },
 ]
 
